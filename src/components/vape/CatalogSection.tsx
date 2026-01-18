@@ -2,7 +2,8 @@ import Icon from '@/components/ui/icon';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Product, renderStars } from './types';
+import { Product } from './types';
+import { renderStars } from './StarRating';
 
 type CatalogSectionProps = {
   products: Product[];
