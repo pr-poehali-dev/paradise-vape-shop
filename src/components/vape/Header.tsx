@@ -18,9 +18,13 @@ const Header = ({ cart, activeSection, setActiveSection, updateQuantity, removeF
     <header className="border-b border-border sticky top-0 bg-background/95 backdrop-blur-sm z-50">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <h1 className="text-3xl font-black glow-cyan text-primary">ParadiseVape</h1>
+          <h1 
+            onClick={() => setActiveSection('catalog')} 
+            className="text-3xl font-black glow-cyan text-primary cursor-pointer hover:opacity-80 transition-opacity"
+          >
+            ParadiseVape
+          </h1>
           <nav className="hidden md:flex items-center gap-6">
-            <button onClick={() => setActiveSection('catalog')} className="text-foreground hover:text-primary transition-colors">Каталог</button>
             <button onClick={() => setActiveSection('about')} className="text-foreground hover:text-primary transition-colors">О нас</button>
             <button onClick={() => setActiveSection('discounts')} className="text-foreground hover:text-primary transition-colors">Скидки</button>
             <button onClick={() => setActiveSection('delivery')} className="text-foreground hover:text-primary transition-colors">Доставка</button>
